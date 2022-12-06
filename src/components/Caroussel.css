@@ -1,0 +1,16 @@
+.slider > ul li button::before {
+  font-size: 15px;
+  color: #13b67a;
+}
+
+.slick-dots > li.slick-active > button::before {
+  color: #13b67a;
+  background-color: #005536;
+  border-radius: 100%;
+}
+
+.slick-dots {
+  visibility: hidden;
+  position: absolute;
+  bottom: 60px;
+}

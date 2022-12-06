@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91.529" height="85.889" viewBox="0 0 91.529 85.889">
+  <g id="Calque_2" data-name="Calque 2" transform="translate(7.562 6.37)">
+    <path id="Tracé_3" data-name="Tracé 3" d="M120.04,126.792v47.921H183.5l.249-47.921.809-6.077L151.8,96.01,120.04,121.069v5.724" transform="translate(-113.593 -96.286)" fill="#e9f9ff"/>
+    <path id="Tracé_3_-_Contour" data-name="Tracé 3 - Contour" d="M180.678,170.867H115.04V115.6L147.873,89.7l33.943,25.6L180.923,122Zm-63.457-2.181h61.287l.243-46.836.736-5.583L147.9,92.45l-30.682,24.21Z" transform="translate(-109.684 -91.349)" fill="#018539"/>
+    <path id="Tracé_4" data-name="Tracé 4" d="M353.87,101.8V89.54h13.515v26.117L353.87,101.8" transform="translate(-296.418 -91.227)" fill="#e9f9ff"/>
+    <path id="Tracé_4_-_Contour" data-name="Tracé 4 - Contour" d="M364.567,114.428l-15.7-16.094V84.54h15.7ZM351.051,97.446l11.334,11.621V86.721H351.051Z" transform="translate(-292.508 -87.318)" fill="#018539"/>
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="7.059" cy="7.059" r="7.059" transform="translate(31.146 23.018)" fill="#e9f9ff"/>
+    <path id="Ellipse_5_-_Contour" data-name="Ellipse 5 - Contour" d="M3.149-5A8.149,8.149,0,1,1-5,3.149,8.159,8.159,0,0,1,3.149-5Zm0,14.117A5.968,5.968,0,1,0-2.819,3.149,5.975,5.975,0,0,0,3.149,9.117Z" transform="translate(35.055 26.928)" fill="#018539"/>
+    <path id="Tracé_5" data-name="Tracé 5" d="M211.43,349.479V320.91h23.645v28.569" transform="translate(-185.048 -272.128)" fill="#fff"/>
+    <path id="Tracé_5_-_Contour" data-name="Tracé 5 - Contour" d="M232.257,345.569h-2.181V318.091H208.611v27.478H206.43V315.91h25.827Z" transform="translate(-181.139 -268.219)" fill="#018539"/>
+    <path id="Tracé_6" data-name="Tracé 6" d="M185.319,152.146l-30.791-24.734-26.854,19.763v44.8H122.89V145.41l31.136-25.94L185.4,145.449Z" transform="translate(-115.821 -114.628)" fill="#d0dded"/>
+    <path id="Tracé_7" data-name="Tracé 7" d="M227.34,337.369h13.823v21.8h4.057V333.31H227.34Z" transform="translate(-197.488 -281.823)" fill="#d0dded"/>
+    <path id="Tracé_8" data-name="Tracé 8" d="M63.38,109.262,106.672,74.44l44.941,34.822-5.883,5.883L107.5,83.381l-38,31.764Z" transform="translate(-69.292 -79.421)" fill="#e9f9ff"/>
+    <path id="Tracé_8_-_Contour" data-name="Tracé 8 - Contour" d="M139.886,111.639l-38.3-31.819L63.535,111.629l-7.717-7.42L100.747,68.07l46.6,36.108Zm-80.769-7.284,4.52,4.346,37.945-31.72L139.75,108.69l4.3-4.3L100.773,70.849Z" transform="translate(-63.38 -74.44)" fill="#018539"/>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+.card {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 250px;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 2%;
+}
+
+.card:hover::before {
+  content: "";
+  position: absolute;
+  height: 500px;
+  width: 230px;
+  background-color: #13b67a;
+  animation: rotar 4s linear infinite;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  height: 292px;
+  width: 242px;
+  background-color: white;
+  border-radius: 2%;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
