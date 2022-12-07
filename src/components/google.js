@@ -3,7 +3,7 @@ import mapboxgl from "mapbox-gl";
 import map from "../img/icons/map.svg";
 
 mapboxgl.accessToken =
-  "pk.eyJ1IjoidGVkZHkyMzciLCJhIjoiY2xiNm9raHl4MDMxdjN2bGVqcjkxazNvNiJ9.eOKv2XPQi-AG_USX4rMreg";
+  "pk.eyJ1IjoidGVkZHkyMzciLCJhIjoiY2xiNm9mbGUwMDE1cDNxcGxrZjBiZjNkcSJ9.-3FE1VXQRQAkc2sIiTg8jg";
 
 class Mapp extends React.Component {
   // Set up states for updating map
@@ -12,7 +12,7 @@ class Mapp extends React.Component {
     this.state = {
       lng: 9.696536930830325,
       lat: 4.051807752792534,
-      zoom: 5,
+      zoom: 6,
     };
   }
 
