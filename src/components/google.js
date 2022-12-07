@@ -1,6 +1,5 @@
 import React from "react";
 import mapboxgl from "mapbox-gl";
-import "mapbox-gl/dist/mapbox-gl.css";
 import map from "../img/icons/map.svg";
 
 mapboxgl.accessToken =
