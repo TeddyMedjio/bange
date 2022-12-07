@@ -3,10 +3,9 @@ import mapboxgl from "mapbox-gl";
 import map from "../img/icons/map.svg";
 
 mapboxgl.accessToken =
-  "pk.eyJ1IjoidGVkZHkyMzciLCJhIjoiY2xiNm9mbGUwMDE1cDNxcGxrZjBiZjNkcSJ9.-3FE1VXQRQAkc2sIiTg8jg";
+  "pk.eyJ1IjoidGVkZHkyMzciLCJhIjoiY2xiNm9raHl4MDMxdjN2bGVqcjkxazNvNiJ9.eOKv2XPQi-AG_USX4rMreg";
 
-class Mapp extends React.Component {
-  // Set up states for updating map
+export default class Mapp extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,21 +13,30 @@ class Mapp extends React.Component {
       lat: 4.051807752792534,
       zoom: 6,
     };
+    this.mapContainer = React.createRef();
   }
 
-  // Create map and lay over markers
   componentDidMount() {
+    const { lng, lat, zoom } = this.state;
     const map = new mapboxgl.Map({
-      container: this.mapContainer,
+      container: this.mapContainer.current,
       style: "mapbox://styles/teddy237/clbc89taf000c14moitsiwd83",
-      center: [this.state.lng, this.state.lat],
-      zoom: this.state.zoom,
+      center: [lng, lat],
+      zoom: zoom,
+    });
+
+    map.on("move", () => {
+      this.setState({
+        lng: map.getCenter().lng.toFixed(4),
+        lat: map.getCenter().lat.toFixed(4),
+        zoom: map.getZoom().toFixed(2),
+      });
     });
   }
-
   render() {
+    const { lng, lat, zoom } = this.state;
     return (
-      <div>
+      <div className="relative">
         <div className="z-50 absolute container w-[2%]">
           <div className="bg-[#018539] rounded-b-md w-80 pb-16">
             <h3 className="text-white font-semibold text-4xl w-3/4 pl-10 pt-10">
@@ -42,13 +50,15 @@ class Mapp extends React.Component {
             </div>
           </div>
         </div>
+        {/* <div className="sidebar">
+          Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
+        </div> */}
         <div
-          ref={(el) => (this.mapContainer = el)}
-          style={{ width: "100%", height: "100vh" }}
+          ref={this.mapContainer}
+          className="map-container"
+          style={{ width: "100%", height: "671px" }}
         />
       </div>
     );
   }
 }
-
-export default Mapp;

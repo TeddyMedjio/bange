@@ -2,9 +2,9 @@ import React from "react";
 import Actualite from "../components/Actualite";
 import Caroussel from "../components/Caroussel";
 import Categories from "../components/Categories";
-import Map from "../components/Map";
 import MyModal from "../components/Modal";
 import Video from "../components/Video";
+import Google from "../components/Google";
 
 const Acceuil = () => {
   return (
@@ -14,7 +14,7 @@ const Acceuil = () => {
       <Categories />
       <Video />
       <Actualite />
-      <Map />
+      <Google />
     </div>
   );
 };
