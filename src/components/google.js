@@ -11,7 +11,7 @@ export default class Mapp extends React.PureComponent {
     this.state = {
       lng: 9.696536930830325,
       lat: 4.051807752792534,
-      zoom: 6,
+      zoom: 15,
     };
     this.mapContainer = React.createRef();
   }
