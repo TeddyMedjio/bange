@@ -1,6 +1,6 @@
 import React from "react";
 import video from "../img/file2.mp4";
-import pub from "../img/pub.webm";
+import pub from "../img/pub.mp4";
 
 const Video = () => {
   return (

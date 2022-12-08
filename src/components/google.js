@@ -1,5 +1,6 @@
 import React from "react";
 import map from "../img/icons/map.svg";
+import "mapbox-gl/dist/mapbox-gl.css";
 
 import Map, {
   Marker,
@@ -33,7 +34,7 @@ function Mapp() {
         mapboxAccessToken="pk.eyJ1IjoidGVkZHkyMzciLCJhIjoiY2xiZWphYWRwMDA0bzQwdXl1eDQwd25obCJ9.MB_Y-EUBwf7lnkB4qTfL-A"
         style={{
           width: "100%",
-          height: "671px",
+          height: "600px",
         }}
         initialViewState={{
           longitude: lng,
