@@ -3,6 +3,7 @@ import map from "../img/icons/map.svg";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 import Map, {
+  Marker,
   NavigationControl,
   FullscreenControl,
   GeolocateControl,
@@ -10,9 +11,18 @@ import Map, {
 import { useState } from "react";
 
 function Mapbox() {
+  // douala
   const [lng, setLng] = useState(9.696536930830325);
   const [lat, setLat] = useState(4.051807752792534);
-  const [zoom, setZoom] = useState(15);
+
+  // yaounde
+  const [lng1, setLng1] = useState(11.516120265390196);
+  const [lat1, setLat1] = useState(3.86519988132557);
+  const [zoom, setZoom] = useState(6);
+
+  // kribi
+  const [lng2, setLng2] = useState(9.912503199280733);
+  const [lat2, setLat2] = useState(2.9430159296634453);
 
   return (
     <div className="relative">
@@ -38,14 +48,17 @@ function Mapbox() {
         initialViewState={{
           longitude: lng,
           latitude: lat,
+          longitude1: lng1,
+          latitude1: lat1,
           zoom: zoom,
         }}
         mapStyle="mapbox://styles/mapbox/streets-v11"
       >
         <NavigationControl position="bottom-right" />
         <FullscreenControl />
-
-        <GeolocateControl />
+        <Marker longitude={lng} latitude={lat} />
+        <Marker longitude={lng1} latitude={lat1} />
+        <Marker longitude={lng2} latitude={lat2} />
       </Map>
     </div>
   );
