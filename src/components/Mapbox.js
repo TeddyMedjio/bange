@@ -14,11 +14,11 @@ function Mapbox() {
   // douala
   const [lng, setLng] = useState(9.696536930830325);
   const [lat, setLat] = useState(4.051807752792534);
+  const [zoom, setZoom] = useState(6);
 
   // yaounde
   const [lng1, setLng1] = useState(11.516120265390196);
   const [lat1, setLat1] = useState(3.86519988132557);
-  const [zoom, setZoom] = useState(6);
 
   // kribi
   const [lng2, setLng2] = useState(9.912503199280733);
@@ -50,6 +50,8 @@ function Mapbox() {
           latitude: lat,
           longitude1: lng1,
           latitude1: lat1,
+          longitude1: lng2,
+          latitude1: lat2,
           zoom: zoom,
         }}
         mapStyle="mapbox://styles/mapbox/streets-v11"
