@@ -1,6 +1,5 @@
 import React from "react";
 import map from "../img/icons/map.svg";
-import "mapbox-gl/dist/mapbox-gl.css";
 
 import Map, {
   Marker,
