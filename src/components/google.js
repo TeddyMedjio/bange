@@ -10,6 +10,7 @@ import Map, {
   GeolocateControl,
 } from "react-map-gl";
 import { useState } from "react";
+
 function Mapp() {
   const [lng, setLng] = useState(9.696536930830325);
   const [lat, setLat] = useState(4.051807752792534);
