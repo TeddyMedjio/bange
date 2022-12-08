@@ -3,15 +3,13 @@ import map from "../img/icons/map.svg";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 import Map, {
-  Marker,
   NavigationControl,
-  Popup,
   FullscreenControl,
   GeolocateControl,
 } from "react-map-gl";
 import { useState } from "react";
 
-function Mapp() {
+function Mapbox() {
   const [lng, setLng] = useState(9.696536930830325);
   const [lat, setLat] = useState(4.051807752792534);
   const [zoom, setZoom] = useState(15);
@@ -44,7 +42,6 @@ function Mapp() {
         }}
         mapStyle="mapbox://styles/teddy237/clbc89taf000c14moitsiwd83"
       >
-        {/* <Marker longitude={lng} latitude={lat} /> */}
         <NavigationControl position="bottom-right" />
         <FullscreenControl />
 
@@ -54,4 +51,4 @@ function Mapp() {
   );
 }
 
-export default Mapp;
+export default Mapbox;

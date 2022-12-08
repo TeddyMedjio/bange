@@ -4,7 +4,7 @@ import Caroussel from "../components/Caroussel";
 import Categories from "../components/Categories";
 import MyModal from "../components/Modal";
 import Video from "../components/Video";
-import Google from "../components/Google";
+import Mapbox from "../components/Mapbox";
 
 const Acceuil = () => {
   return (
@@ -14,7 +14,7 @@ const Acceuil = () => {
       <Categories />
       <Video />
       <Actualite />
-      <Google />
+      <Mapbox />
     </div>
   );
 };
