@@ -40,7 +40,7 @@ function Mapbox() {
           latitude: lat,
           zoom: zoom,
         }}
-        mapStyle="mapbox://styles/teddy237/clbc89taf000c14moitsiwd83"
+        mapStyle="mapbox://styles/mapbox/streets-v11"
       >
         <NavigationControl position="bottom-right" />
         <FullscreenControl />
